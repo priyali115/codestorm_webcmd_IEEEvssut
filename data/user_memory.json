@@ -1,0 +1,24 @@
+{
+  "student_profile": {
+    "name": "",
+    "university": "",
+    "branch": "",
+    "registration_number": "",
+    "cgpa": null,
+    "skills": [],
+    "document_paths": []
+  },
+  "recruitment_company": {
+    "company_name": "",
+    "active_job": ""
+  },
+  "billing_accounts": {
+    "electricity": "",
+    "internet": "",
+    "mobile": ""
+  },
+  "healthcare_preferences": {
+    "preferred_location": "",
+    "insurance_provider": ""
+  }
+}
