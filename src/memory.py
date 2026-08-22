@@ -10,6 +10,7 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
+# Ensure project root is in sys.path for direct execution
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from src.config import MEMORY_PATH
@@ -55,6 +56,13 @@ def _write(value: dict[str, Any]) -> None:
         raise RuntimeError(f"Could not write user memory at {MEMORY_FILE}: {exc}") from exc
 
 
+def save_memory(value: dict[str, Any]) -> None:
+    """Overwrite entire memory object defensively."""
+    if not isinstance(value, dict):
+        raise ValueError("Memory data must be a dictionary")
+    _write(deepcopy(value))
+
+
 def update_memory(key: str, data: dict[str, Any]) -> dict[str, Any]:
     """Merge a top-level memory section and persist it atomically."""
     if not key or not isinstance(data, dict):
@@ -71,6 +79,10 @@ def update_memory(key: str, data: dict[str, Any]) -> dict[str, Any]:
 
 def get_student_profile() -> dict[str, Any]:
     return deepcopy(_read().get("student_profile", {}))
+
+
+def get_recruitment_company() -> dict[str, Any]:
+    return deepcopy(_read().get("recruitment_company", {}))
 
 
 def get_billing_accounts() -> dict[str, Any]:

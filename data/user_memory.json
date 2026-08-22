@@ -1,24 +1,49 @@
 {
   "student_profile": {
-    "name": "",
-    "university": "",
-    "branch": "",
-    "registration_number": "",
-    "cgpa": null,
-    "skills": [],
-    "document_paths": []
+    "name": "Alex Rivera",
+    "university": "VSSUT Burla",
+    "branch": "Computer Science & Engineering",
+    "registration_number": "2102060045",
+    "cgpa": 8.95,
+    "skills": [
+      "Python",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Machine Learning",
+      "FastAPI"
+    ],
+    "document_paths": [
+      "C:/Documents/Resumes/Alex_Rivera_CV.pdf"
+    ],
+    "resume_path": "C:/Documents/Resumes/Alex_Rivera_CV.pdf"
   },
   "recruitment_company": {
-    "company_name": "",
-    "active_job": ""
+    "company_name": "TechCorp Innovations",
+    "active_job": "Senior Full Stack Engineer",
+    "filter_criteria": {
+      "min_experience": 2,
+      "required_skills": [
+        "React",
+        "Python"
+      ],
+      "location": "Remote"
+    }
   },
   "billing_accounts": {
-    "electricity": "",
-    "internet": "",
-    "mobile": ""
+    "electricity": "ELEC-8839201",
+    "broadband": "BB-9920144",
+    "internet": "BB-9920144",
+    "mobile": "MOB-9876543210"
   },
   "healthcare_preferences": {
-    "preferred_location": "",
-    "insurance_provider": ""
+    "preferred_location": "Downtown Medical Center",
+    "location": "Downtown Medical Center",
+    "insurance_provider": "HealthGuard Premium (ID: HG-883921)",
+    "insurance": "HealthGuard Premium (ID: HG-883921)",
+    "preferred_slots": [
+      "Morning (9:00 AM - 12:00 PM)",
+      "Weekend Slots"
+    ]
   }
 }
